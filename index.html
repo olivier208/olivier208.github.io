@@ -1,0 +1,830 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="" />
+    <meta name="description" content="" />
+    <title></title>
+    <style>
+      :root {
+        --ink: #252522;
+        --muted: #66655f;
+        --paper: #f6f2eb;
+        --white: #fffdf9;
+        --purple: #6c5685;
+        --purple-dark: #4c3b61;
+        --lilac: #e6dced;
+        --lime: #d7e58b;
+        --line: #ded9d0;
+        --coral: #e5a28e;
+        --serif: Georgia, "Times New Roman", serif;
+        --sans: Arial, Helvetica, sans-serif;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: var(--sans);
+        line-height: 1.6;
+      }
+      a {
+        color: inherit;
+      }
+      .wrap {
+        width: min(1120px, calc(100% - 48px));
+        margin-inline: auto;
+      }
+      img,
+      svg {
+        max-width: 100%;
+      }
+      :target {
+        scroll-margin-top: 20px;
+      }
+      .topbar {
+        padding: 22px 0;
+        border-bottom: 1px solid var(--line);
+      }
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        font-size: 1.08rem;
+        font-weight: 700;
+        letter-spacing: -0.04em;
+      }
+      .brand-mark {
+        display: grid;
+        place-items: center;
+        width: 35px;
+        height: 35px;
+        border-radius: 50% 50% 50% 12px;
+        background: var(--purple);
+        color: white;
+        font-size: 19px;
+      }
+      .nav-links {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        font-size: 0.88rem;
+      }
+      .nav-links a {
+        text-decoration: none;
+      }
+      .nav-links a:hover {
+        text-decoration: underline;
+        text-underline-offset: 4px;
+      }
+      .hero {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        align-items: center;
+        gap: 68px;
+        padding: 74px 0 82px;
+      }
+      .eyebrow {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--purple-dark);
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+      }
+      .eyebrow:before {
+        content: "";
+        width: 25px;
+        height: 1px;
+        background: currentColor;
+      }
+      h1,
+      h2,
+      h3,
+      p {
+        margin-top: 0;
+      }
+      h1 {
+        max-width: 640px;
+        margin: 18px 0 20px;
+        font-family: var(--serif);
+        font-weight: 400;
+        font-size: clamp(3rem, 6.2vw, 5.55rem);
+        line-height: 0.98;
+        letter-spacing: -0.055em;
+      }
+      h1 em {
+        color: var(--purple);
+        font-weight: 400;
+      }
+      .hero-copy {
+        max-width: 510px;
+        color: var(--muted);
+        font-size: 1.08rem;
+      }
+      .hero-art {
+        position: relative;
+        display: grid;
+        place-items: center;
+        min-height: 370px;
+      }
+      .orbit {
+        position: absolute;
+        width: min(340px, 80vw);
+        aspect-ratio: 1;
+        border: 1px solid #d2c7d8;
+        border-radius: 50%;
+      }
+      .orbit:before,
+      .orbit:after {
+        content: "";
+        position: absolute;
+        border: 1px solid #d2c7d8;
+        border-radius: 50%;
+        inset: 25px;
+      }
+      .orbit:after {
+        inset: 51px;
+      }
+      .art-card {
+        position: relative;
+        z-index: 1;
+        width: min(310px, 82%);
+        padding: 36px 30px 30px;
+        background: var(--lilac);
+        border-radius: 48% 48% 44% 44% / 40% 40% 54% 54%;
+        text-align: center;
+        transform: rotate(-3deg);
+      }
+      .sun {
+        display: grid;
+        place-items: center;
+        width: 58px;
+        height: 58px;
+        margin: 0 auto 18px;
+        border-radius: 50%;
+        background: var(--lime);
+        font-size: 27px;
+      }
+      .art-card blockquote {
+        margin: 0;
+        font-family: var(--serif);
+        font-size: 1.7rem;
+        line-height: 1.2;
+        letter-spacing: -0.025em;
+      }
+      .art-card p {
+        margin: 15px 0 0;
+        color: var(--muted);
+        font-size: 0.82rem;
+      }
+      .spark {
+        position: absolute;
+        color: var(--purple);
+        font-size: 28px;
+      }
+      .spark.one {
+        top: 16%;
+        right: 8%;
+      }
+      .spark.two {
+        bottom: 15%;
+        left: 7%;
+        font-size: 20px;
+      }
+      .note {
+        position: absolute;
+        right: 0;
+        bottom: 22px;
+        padding: 10px 15px;
+        background: var(--white);
+        box-shadow: 0 8px 24px #352a1714;
+        border-radius: 12px;
+        font-size: 0.77rem;
+        transform: rotate(3deg);
+      }
+      .section-head {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        gap: 24px;
+        margin-bottom: 27px;
+      }
+      .section-head h2 {
+        margin: 9px 0 0;
+        font-family: var(--serif);
+        font-weight: 400;
+        font-size: clamp(2rem, 4vw, 3rem);
+        line-height: 1.05;
+        letter-spacing: -0.04em;
+      }
+      .section-head p {
+        max-width: 350px;
+        margin-bottom: 4px;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+      .articles {
+        padding: 55px 0 78px;
+        border-top: 1px solid var(--line);
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+      }
+      .article {
+        display: flex;
+        flex-direction: column;
+        min-height: 340px;
+        padding: 24px;
+        background: var(--white);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        transition:
+          transform 0.2s,
+          box-shadow 0.2s;
+      }
+      .article:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 14px 28px #352a1710;
+      }
+      .article-top {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 25px;
+      }
+      .eyebrow-copy {
+        display: block;
+      }
+      .eyebrow-copy:before {
+        display: none;
+      }
+      .tag {
+        display: inline-block;
+        max-width: 100%;
+        padding: 6px 10px;
+        border-radius: 99px;
+        background: var(--lilac);
+        color: var(--purple-dark);
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        overflow-wrap: anywhere;
+      }
+      .article:nth-child(3n + 2) .tag {
+        background: #edf0d6;
+        color: #556025;
+      }
+      .article:nth-child(3n) .tag {
+        background: #f5e3dc;
+        color: #8b5144;
+      }
+      .read-time {
+        color: var(--muted);
+        font-size: 0.72rem;
+      }
+      .article h3 {
+        margin: 0 0 12px;
+        font-family: var(--serif);
+        font-size: 1.65rem;
+        font-weight: 400;
+        line-height: 1.12;
+        letter-spacing: -0.025em;
+      }
+      .article > p {
+        margin: 0 0 24px;
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+      details {
+        margin-top: auto;
+        border-top: 1px solid var(--line);
+        padding-top: 14px;
+      }
+      summary {
+        display: flex;
+        align-items: center;
+        width: max-content;
+        max-width: 100%;
+        min-height: 44px;
+        padding: 10px 0;
+        cursor: pointer;
+        color: var(--purple-dark);
+        font-size: 0.83rem;
+        font-weight: 700;
+        list-style: none;
+      }
+      summary::-webkit-details-marker {
+        display: none;
+      }
+      .disclosure-icon {
+        padding-left: 9px;
+        font-size: 1rem;
+        line-height: 1;
+      }
+      .article-sources {
+        margin-top: 18px;
+        padding-top: 14px;
+        border-top: 1px solid var(--line);
+        font-size: 0.8rem;
+      }
+      .article-sources h4 {
+        margin: 0 0 8px;
+        color: var(--ink);
+        font-size: 0.8rem;
+      }
+      .article-sources ul {
+        margin: 0;
+        padding-left: 18px;
+      }
+      .article-sources li + li {
+        margin-top: 5px;
+      }
+      .article-sources a {
+        color: var(--purple-dark);
+        text-underline-offset: 3px;
+      }
+      .article-body {
+        padding-top: 16px;
+        color: var(--muted);
+        font-size: 0.88rem;
+      }
+      .article-body p:last-child {
+        margin-bottom: 0;
+      }
+      .callout {
+        margin: 0 0 78px;
+        padding: 36px 42px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 28px;
+        background: var(--lime);
+        border-radius: 20px;
+      }
+      .callout h2 {
+        max-width: 590px;
+        margin: 0;
+        font-family: var(--serif);
+        font-weight: 400;
+        font-size: clamp(1.8rem, 3.5vw, 2.7rem);
+        line-height: 1.1;
+        letter-spacing: -0.035em;
+      }
+      .callout p {
+        max-width: 350px;
+        margin: 0;
+        color: #4e5239;
+        font-size: 0.9rem;
+      }
+      .callout {
+        width: min(1120px, calc(100% - 48px));
+        max-width: none;
+        margin-inline: auto;
+        text-align: center;
+      }
+      .callout h2,
+      .callout p {
+        margin-inline: auto;
+      }
+      .about {
+        padding: 0 0 68px;
+        display: grid;
+        grid-template-columns: 0.7fr 1.3fr;
+        gap: 45px;
+      }
+      .about h2 {
+        margin: 0;
+        font-family: var(--serif);
+        font-weight: 400;
+        font-size: 2rem;
+        letter-spacing: -0.03em;
+      }
+      .about p {
+        max-width: 640px;
+        margin: 0;
+        color: var(--muted);
+      }
+      footer {
+        padding: 22px 0;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 0.78rem;
+      }
+      .footer-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+      }
+      .school-note {
+        margin-left: auto;
+        color: var(--purple-dark);
+        font-size: 0.72rem;
+        font-weight: 700;
+        text-align: right;
+      }
+      :focus-visible {
+        outline: 3px solid var(--coral);
+        outline-offset: 4px;
+      }
+      @media (max-width: 980px) {
+        .hero {
+          grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+          gap: 32px;
+          padding: 60px 0 68px;
+        }
+        .hero h1 {
+          font-size: clamp(3rem, 5.4vw, 5.2rem);
+        }
+        .hero-art {
+          min-height: 320px;
+        }
+        .grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        .callout {
+          display: block;
+          padding: 30px 34px;
+        }
+        .callout p {
+          margin-top: 14px;
+        }
+        .about {
+          gap: 28px;
+        }
+      }
+      @media (max-width: 760px) {
+        .wrap {
+          width: min(100% - 32px, 560px);
+        }
+        .nav-links {
+          gap: 14px;
+        }
+        .hero {
+          grid-template-columns: minmax(0, 1fr);
+          gap: 18px;
+          padding: 52px 0 48px;
+        }
+        .hero h1 {
+          font-size: clamp(3rem, 9vw, 4rem);
+        }
+        .hero-art {
+          min-height: 315px;
+        }
+        .articles {
+          padding: 44px 0 58px;
+        }
+        .section-head {
+          display: block;
+        }
+        .section-head p {
+          margin-top: 14px;
+        }
+        .grid {
+          grid-template-columns: minmax(0, 1fr);
+        }
+        .article {
+          min-height: 0;
+        }
+        .callout {
+          padding: 26px;
+          margin-bottom: 56px;
+        }
+        .about {
+          grid-template-columns: minmax(0, 1fr);
+          gap: 15px;
+          padding-bottom: 52px;
+        }
+      }
+      @media (max-width: 420px) {
+        .nav {
+          gap: 12px;
+        }
+        .nav-links {
+          font-size: 0.78rem;
+        }
+        .brand {
+          font-size: 0.95rem;
+          gap: 8px;
+        }
+        .brand-mark {
+          width: 32px;
+          height: 32px;
+        }
+        .wrap {
+          width: calc(100% - 32px);
+        }
+        .hero {
+          padding-top: 42px;
+        }
+        .hero h1 {
+          font-size: clamp(2.65rem, 12vw, 3rem);
+          letter-spacing: -0.05em;
+        }
+        .hero-art {
+          min-height: 275px;
+        }
+        .art-card {
+          padding: 30px 24px 25px;
+        }
+        .art-card blockquote {
+          font-size: 1.5rem;
+        }
+        .note {
+          right: 0;
+          max-width: 75%;
+        }
+        .article {
+          padding: 20px;
+        }
+        .article-top {
+          column-gap: 8px;
+        }
+        .footer-inner {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 8px;
+        }
+        .footer-inner .school-note {
+          align-self: flex-end;
+          margin-top: 4px;
+        }
+      }
+      @media (hover: hover) {
+        .article:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 14px 28px #352a1710;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+        *,
+        *:before,
+        *:after {
+          transition: none !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="site" hidden>
+      <header class="topbar">
+        <nav class="nav wrap" id="navigation"></nav>
+      </header>
+      <main>
+        <section class="hero wrap" id="inicio" aria-labelledby="hero-title">
+          <div class="hero-copy-column"></div>
+          <div class="hero-art"></div>
+        </section>
+        <section
+          class="articles"
+          id="articulos"
+          aria-labelledby="articles-title"
+        >
+          <div class="wrap">
+            <div class="section-head"></div>
+            <div class="grid"></div>
+          </div>
+        </section>
+        <aside class="callout wrap"></aside>
+        <section
+          class="about wrap"
+          id="proyecto"
+          aria-labelledby="about-title"
+        ></section>
+      </main>
+      <footer><div class="footer-inner wrap"></div></footer>
+    </div>
+    <div
+      id="load-message"
+      role="alert"
+      class="wrap"
+      style="padding: 2rem 0"
+      hidden
+    ></div>
+    <script>
+      (() => {
+        const site = document.getElementById("site");
+        const errorBox = document.getElementById("load-message");
+        let contentErrors;
+        let errorKey = "contentLoadFailed";
+        const technicalFallback =
+          "No se pudieron cargar los textos. Comprueba que content.json esté junto a index.html y abre el sitio desde un servidor web.";
+        const text = (value) => {
+          if (typeof value !== "string")
+            throw new Error("Invalid text in content.json");
+          return document.createTextNode(value);
+        };
+        const element = (tag, className, value) => {
+          const node = document.createElement(tag);
+          if (className) node.className = className;
+          if (value !== undefined) node.append(text(value));
+          return node;
+        };
+        const link = (label, href, className) => {
+          const node = element("a", className, label);
+          node.href = href;
+          return node;
+        };
+        const load = async () => {
+          const response = await fetch("./content.json", { cache: "no-store" });
+          if (!response.ok) {
+            errorBox.textContent = technicalFallback;
+            throw new Error("content.json could not be fetched");
+          }
+          let data;
+          try {
+            data = await response.json();
+          } catch {
+            errorKey = "contentInvalid";
+            throw new Error("content.json is not valid JSON");
+          }
+          if (
+            !data ||
+            typeof data !== "object" ||
+            !Array.isArray(data.articles)
+          ) {
+            errorKey = "contentInvalid";
+            contentErrors = data?.errors;
+            throw new Error("Invalid content.json structure");
+          }
+          contentErrors = data.errors;
+          document.documentElement.lang = data.language;
+          document.title = data.page.title;
+          document.querySelector('meta[name="description"]').content =
+            data.page.description;
+          document.querySelector('meta[name="theme-color"]').content =
+            data.page.themeColor;
+
+          const navigation = document.getElementById("navigation");
+          const brand = link(data.navigation.brandName, "#inicio", "brand");
+          brand.setAttribute("aria-label", data.navigation.homeLabel);
+          const brandMark = element(
+            "span",
+            "brand-mark",
+            data.navigation.brandMark,
+          );
+          brandMark.setAttribute("aria-hidden", "true");
+          brand.prepend(brandMark);
+          navigation.setAttribute("aria-label", data.navigation.ariaLabel);
+          navigation.append(brand);
+          const navLinks = element("div", "nav-links");
+          data.navigation.links.forEach((item) =>
+            navLinks.append(link(item.label, item.href, item.className)),
+          );
+          navigation.append(navLinks);
+
+          const hero = document.querySelector(".hero");
+          const heroCopy = hero.querySelector(".hero-copy-column");
+          heroCopy.append(element("div", "eyebrow", data.hero.eyebrow));
+          const heroTitle = element("h1", "", data.hero.title);
+          heroTitle.id = "hero-title";
+          heroTitle.append(" ", element("em", "", data.hero.highlight));
+          heroCopy.append(
+            heroTitle,
+            element("p", "hero-copy", data.hero.intro),
+          );
+          const illustration = hero.querySelector(".hero-art");
+          illustration.setAttribute("aria-label", data.hero.illustrationLabel);
+          const orbit = element("div", "orbit");
+          orbit.setAttribute("aria-hidden", "true");
+          illustration.append(orbit);
+          ["one", "two"].forEach((position) => {
+            const spark = element("span", `spark ${position}`, data.hero.spark);
+            spark.setAttribute("aria-hidden", "true");
+            illustration.append(spark);
+          });
+          const artCard = element("div", "art-card");
+          const sun = element("span", "sun", data.hero.illustrationIcon);
+          sun.setAttribute("aria-hidden", "true");
+          artCard.append(
+            sun,
+            element("blockquote", "", data.hero.illustrationQuote),
+            element("p", "", data.hero.illustrationCaption),
+          );
+          illustration.append(artCard);
+          const note = element(
+            "div",
+            "note",
+            `${data.hero.note}  ${data.hero.noteFlower}`,
+          );
+          illustration.append(note);
+
+          const sectionHead = document.querySelector(".section-head");
+          const sectionHeading = document.createElement("div");
+          const sectionEyebrow = element(
+            "div",
+            "eyebrow eyebrow-copy",
+            data.articlesSection.eyebrow,
+          );
+          const sectionTitle = element("h2", "", data.articlesSection.title);
+          sectionTitle.id = "articles-title";
+          sectionTitle.append(
+            document.createElement("br"),
+            text(data.articlesSection.titleSecondLine),
+          );
+          sectionHeading.append(sectionEyebrow, sectionTitle);
+          sectionHead.append(
+            sectionHeading,
+            element("p", "", data.articlesSection.description),
+          );
+          const grid = document.querySelector(".grid");
+          data.articles.forEach((article, index) => {
+            const card = element("article", "article");
+            const metadata = element("div", "article-top");
+            metadata.append(
+              element("span", "tag", article.category),
+              element("span", "read-time", article.readTime),
+            );
+            const title = element("h3", "", article.title);
+            title.id = `article-title-${index + 1}`;
+            const summary = element("p", "", article.summary);
+            const details = document.createElement("details");
+            const disclosure = element(
+              "summary",
+              "",
+              data.articlesSection.openArticleLabel,
+            );
+            const icon = element("span", "disclosure-icon", "+");
+            icon.setAttribute("aria-hidden", "true");
+            disclosure.append(icon);
+            disclosure.addEventListener("click", () => {
+              window.setTimeout(() => {
+                icon.textContent = details.open ? "−" : "+";
+              });
+            });
+            details.append(disclosure);
+            const body = element("div", "article-body");
+            article.paragraphs.forEach((paragraph) =>
+              body.append(element("p", "", paragraph)),
+            );
+            if (article.sources?.length) {
+              const sources = element("div", "article-sources");
+              sources.append(
+                element("h4", "", data.articlesSection.sourcesLabel),
+              );
+              const list = document.createElement("ul");
+              article.sources.forEach((source) => {
+                const item = document.createElement("li");
+                const sourceLink = link(source.label, source.url);
+                sourceLink.target = "_blank";
+                sourceLink.rel = "noreferrer";
+                item.append(sourceLink);
+                list.append(item);
+              });
+              sources.append(list);
+              body.append(sources);
+            }
+            details.append(body);
+            card.append(metadata, title, summary, details);
+            grid.append(card);
+          });
+
+          const callout = document.querySelector(".callout");
+          callout.append(
+            element("h2", "", data.callout.title),
+            element("p", "", data.callout.text),
+          );
+          const about = document.querySelector(".about");
+          const aboutTitle = element("h2", "", data.about.title);
+          aboutTitle.id = "about-title";
+          about.append(aboutTitle, element("p", "", data.about.text));
+          const footer = document.querySelector(".footer-inner");
+          footer.append(
+            element("span", "footer-credit", `© ${data.footer.projectName}`),
+            element("span", "footer-slogan", data.footer.slogan),
+            element("span", "school-note", data.footer.projectType),
+          );
+          site.hidden = false;
+        };
+        load().catch((error) => {
+          errorBox.textContent = contentErrors?.[errorKey] || technicalFallback;
+          errorBox.hidden = false;
+          console.error("Ayuda mental content loading failed:", error);
+        });
+      })();
+    </script>
+  </body>
+</html>
