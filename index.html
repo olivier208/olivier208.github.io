@@ -432,6 +432,25 @@
         font-weight: 700;
         text-align: right;
       }
+      .footer-disclaimer {
+        max-width: 820px;
+        margin-top: 14px;
+        padding-top: 14px;
+        border-top: 1px solid var(--line);
+        font-size: 0.72rem;
+        line-height: 1.55;
+      }
+      .footer-disclaimer p {
+        margin: 0;
+      }
+      .footer-disclaimer p + p {
+        margin-top: 6px;
+      }
+      .footer-disclaimer .disclaimer-title {
+        color: var(--purple-dark);
+        font-weight: 700;
+        letter-spacing: 0.02em;
+      }
       :focus-visible {
         outline: 3px solid var(--coral);
         outline-offset: 4px;
@@ -600,7 +619,12 @@
           aria-labelledby="about-title"
         ></section>
       </main>
-      <footer><div class="footer-inner wrap"></div></footer>
+      <footer>
+        <div class="wrap">
+          <div class="footer-inner"></div>
+          <div class="footer-disclaimer"></div>
+        </div>
+      </footer>
     </div>
     <div
       id="load-message"
@@ -794,6 +818,20 @@
             element("span", "footer-credit", `© ${data.footer.projectName}`),
             element("span", "footer-slogan", data.footer.slogan),
             element("span", "school-note", data.footer.projectType),
+          );
+          const disclaimer = document.querySelector(".footer-disclaimer");
+          const disclaimerEs = element("p", "", data.footer.disclaimer.es);
+          disclaimerEs.lang = "es";
+          const disclaimerEn = element("p", "", data.footer.disclaimer.en);
+          disclaimerEn.lang = "en";
+          disclaimer.append(
+            element(
+              "p",
+              "disclaimer-title",
+              data.footer.disclaimer.title,
+            ),
+            disclaimerEs,
+            disclaimerEn,
           );
           site.hidden = false;
         };
