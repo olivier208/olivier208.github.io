@@ -207,17 +207,6 @@
         left: 7%;
         font-size: 20px;
       }
-      .note {
-        position: absolute;
-        right: 0;
-        bottom: 22px;
-        padding: 10px 15px;
-        background: var(--white);
-        box-shadow: 0 8px 24px #352a1714;
-        border-radius: 12px;
-        font-size: 0.77rem;
-        transform: rotate(3deg);
-      }
       .section-head {
         display: flex;
         align-items: end;
@@ -550,10 +539,6 @@
         .art-card blockquote {
           font-size: 1.5rem;
         }
-        .note {
-          right: 0;
-          max-width: 75%;
-        }
         .article {
           padding: 20px;
         }
@@ -725,13 +710,6 @@
             element("p", "", data.hero.illustrationCaption),
           );
           illustration.append(artCard);
-          const note = element(
-            "div",
-            "note",
-            `${data.hero.note}  ${data.hero.noteFlower}`,
-          );
-          illustration.append(note);
-
           const sectionHead = document.querySelector(".section-head");
           const sectionHeading = document.createElement("div");
           const sectionEyebrow = element(
