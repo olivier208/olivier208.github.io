@@ -25,9 +25,9 @@
   },
   "hero": {
     "eyebrow": "Manifiesto por tu bienestar",
-    "title": "El 15 % de los jóvenes mundial de 10 a 19 años sufre un trastorno mental como la depresión y 5,2 % para los adultos. Para luchar contra ",
-    "highlight": "ayudar a vos seres queridos.",
-    "intro": "La salud mentale es un elemento clave para nuestra vida y nuestro bienestar. No se debe descuidar los síntomas y dejar pasar todo. Es necesario rodearse, abordar soluciones y cuidar unos de otros.",
+    "title": "Un espacio seguro para comprender ",
+    "highlight": "la salud mental",
+    "intro": "La salud mentale es un elemento clave para nuestra vida y nuestro bienestar. El 15 % de los jóvenes mundial de 10 a 19 años sufre un trastorno mental como la depresión y 5,2 % para los adultos. Para luchar contra. No se debe descuidar los síntomas y dejar pasar todo. Es necesario rodearse, abordar soluciones y cuidar unos de otros.",
     "illustrationLabel": "Ilustración de un puño en alto y un corazón solidario",
     "illustrationIcon": "♡",
     "illustrationQuote": "No permitas que quienes te rodean se sientan solos.",
@@ -112,8 +112,8 @@
   },
   "footer": {
     "projectName": "Salud Mental",
-    "projectType": "Una campaña activista para la salud mental",
-    "slogan": "Cuidar la mente también cuenta."
+    "projectType": "Una campaña activista para la salud mental.",
+    "slogan": "Cuidar la mente también cuenta.           Proyecto creado por Olivier, para la clase de español."
   },
   "errors": {
     "contentLoadFailed": "No es posible cargar los textos. Comprueba que el archivo content.json se encuentre junto al archivo index.html.",
