@@ -113,7 +113,12 @@
   "footer": {
     "projectName": "Salud Mental",
     "projectType": "Una campaña activista para la salud mental.",
-    "slogan": "Cuidar la mente también cuenta.           Proyecto creado por Olivier, para la clase de español."
+    "slogan": "Cuidar la mente también cuenta.           Proyecto creado por Olivier, para la clase de español.",
+    "disclaimer": {
+      "title": "Proyecto escolar · School project",
+      "es": "Este sitio es un proyecto escolar realizado en clase de español. Tiene una finalidad informativa y de sensibilización: no es un sitio médico y no sustituye el consejo de un profesional de la salud. Si tú o alguien cercano lo está pasando mal, habla con un adulto de confianza o con un profesional.",
+      "en": "This website is a school project made for a Spanish class. It is for information and awareness only: it is not a medical website and does not replace the advice of a health professional. If you or someone close to you is struggling, talk to a trusted adult or a health professional."
+    }
   },
   "errors": {
     "contentLoadFailed": "No es posible cargar los textos. Comprueba que el archivo content.json se encuentre junto al archivo index.html.",
