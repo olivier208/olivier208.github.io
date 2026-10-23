@@ -1,158 +1,122 @@
 {
-  "language": "fr",
+  "language": "español",
   "page": {
-    "title": "Aide mentale — Ce qui ne se voit pas mérite aussi d’être entendu",
-    "description": "Un blog pour parler de dépression et de santé mentale, découvrir des idées pour prendre soin de soi et lutter contre la dépression.",
+    "title": "Salud Mental — Cuidar la mente también cuenta.",
+    "description": "Un espacio dedicado a ayudar a cualquier persona que tenga preguntas sobre su salud mental.",
     "themeColor": "#f6f2eb"
   },
   "navigation": {
-    "ariaLabel": "Navigation principale",
-    "homeLabel": "Aide mentale, accueil",
-    "brandName": "Aide mentale",
+    "ariaLabel": "Navegación principal",
+    "homeLabel": "Salud Mental, inicio",
+    "brandName": "Salud Mental",
     "brandMark": "✳",
     "links": [
       {
-        "label": "Articles",
+        "label": "Nuestros combates",
         "href": "#articulos",
         "className": "nav-articles"
       },
       {
-        "label": "Le projet",
+        "label": "El proyecto",
         "href": "#proyecto",
         "className": "nav-project"
       }
     ]
   },
   "hero": {
-    "eyebrow": "Un espace pour parler de santé mentale",
-    "title": "Ce qui ne se voit pas mérite aussi d’être",
-    "highlight": "entendu.",
-    "intro": "Un blog pour mieux comprendre ce que nous ressentons, parler de dépression sans préjugés et découvrir de petits gestes qui peuvent aider à prendre soin de notre santé mentale.",
-    "illustrationLabel": "Illustration avec un message de bienveillance et de soutien",
+    "eyebrow": "Manifiesto por tu bienestar",
+    "title": "El 15 % de los jóvenes mundial de 10 a 19 años sufre un trastorno mental como la depresión y 5,2 % para los adultos. Para luchar contra ",
+    "highlight": "ayudar a vos seres queridos.",
+    "intro": "La salud mentale es un elemento clave para nuestra vida y nuestro bienestar. No se debe descuidar los síntomas y dejar pasar todo. Es necesario rodearse, abordar soluciones y cuidar unos de otros.",
+    "illustrationLabel": "Ilustración de un puño en alto y un corazón solidario",
     "illustrationIcon": "♡",
-    "illustrationQuote": "Parler, c’est aussi prendre soin de soi.",
-    "illustrationCaption": "Un pas après l’autre. Sans jugement.",
-    "note": "Ici, il y a une place pour toi",
-    "noteFlower": "",
+    "illustrationQuote": "No permitas que quienes te rodean se sientan solos.",
+    "illustrationCaption": "Ayudemos a nuestros seres queridos frente al sufrimiento mental.",
     "spark": "✳"
   },
   "articlesSection": {
-    "eyebrow": "Lire, comprendre, partager",
-    "title": "Des idées pour prendre soin",
-    "titleSecondLine": "de nos émotions.",
-    "description": "Des informations accessibles et de petites idées pour comprendre la dépression, prendre soin de son bien-être émotionnel et mieux s’entraider. Chaque expérience est différente.",
-    "openArticleLabel": "Lire l’article",
-    "sourcesLabel": "Sources pour aller plus loin"
+    "eyebrow": "Informarse, deconstruir, actuar",
+    "title": "Comprender las realidades de la salud mental",
+    "titleSecondLine": "para afrontarlo mejor.",
+    "description": "Recursos claras para comprender, apoyar a nuestros seres queridos y también prevenir el sufrimiento mental.",
+    "openArticleLabel": "Leer el manifiesto",
+    "sourcesLabel": "Para ir más lejos"
   },
   "articles": [
     {
-      "category": "COMPRENDRE LA DÉPRESSION",
-      "readTime": "5 min de lecture",
-      "title": "La dépression, ce n’est pas seulement être triste",
-      "summary": "Reconnaître certains signes peut aider à comprendre ce qui se passe et à savoir quand demander de l’aide.",
+      "category": "LA DEPRESIÓN",
+      "readTime": "~5 min de lectura",
+      "title": "La depresión no es una elección, sino algo que se padece.",
+      "summary": "Dejemos de confundir una enfermedad con la pereza o un falta de voluntad pensando que es fácil salir de esta situación.",
       "paragraphs": [
-        "La dépression peut se manifester par une tristesse persistante ou une perte d’intérêt et de plaisir. Elle peut également affecter l’énergie, le sommeil, l’appétit, la concentration et l’image que l’on a de soi. Elle ne se remarque pas toujours de l’extérieur.",
-        "Lorsque ces changements sont présents la majeure partie de la journée, presque tous les jours, pendant deux semaines ou plus, ou qu’ils perturbent la vie quotidienne, il est conseillé d’en parler à un professionnel de santé. Il n’est pas nécessaire d’attendre aussi longtemps si le mal-être inquiète ou si l’on a besoin d’aide plus tôt.",
-        "Ces signes ne permettent pas de poser un diagnostic : chaque personne est différente et un professionnel peut aider à comprendre ce que l’on traverse. La dépression n’est pas une faiblesse et ne se surmonte pas simplement par la volonté."
+        "Una persona que sufre depresión no elige estarlo, y no puede salir de esa situación fácilmente solo porque alguien le diga que supere este trance. No todas las personas que sufren depresión son conscientes de hacer una. Por consiguiente, debemos ayudarlos a identificar los síntomas y a buscar ayuda esto acompañándolos, hacia soluciones fiables, como psicólogos o médicos.",
+        "Demasiadas personas sufren de depresión ya sea para los empleados o los estudiantes. Para luchar contra ello, hay que rodearse de personas de confianza y hablar de ello.",
+        "Debemos cambiar nuestra mirada y brindar nuestro apoyo a cualquiera que lo necesite. Ayudemos a cada persona a lograr una mejor calidad de vida."
       ],
       "sources": [
         {
-          "label": "Organisation mondiale de la Santé : dépression",
+          "label": "Organización Mundial de la Salud: depresión",
           "url": "https://www.who.int/fr/news-room/fact-sheets/detail/depression"
         }
       ]
     },
     {
-      "category": "PETITS GESTES POUR PRENDRE SOIN DE SOI",
-      "readTime": "4 min de lecture",
-      "title": "Quand tout semble difficile : commencer par un petit geste",
-      "summary": "En période de dépression, même les tâches simples peuvent sembler immenses. Tu n’as pas besoin de tout régler aujourd’hui.",
+      "category": "LAS ADICCIONES",
+      "readTime": "~4 min de lectura",
+      "title": "Adicciones y salud mental",
+      "summary": "Comprender los mecanismos de la adicción para protegerse mejor y saber dónde encontrar ayuda sin ser juzgado.",
       "paragraphs": [
-        "Si tu t’en sens capable, choisis une action petite et concrète : ouvrir la fenêtre, prendre une douche, manger quelque chose, faire une courte promenade ou répondre à un message. Adapter tes actions à ton niveau d’énergie compte aussi ; le repos peut être nécessaire.",
-        "Garder un peu de contact avec une personne de confiance ou reprendre progressivement une activité que tu aimais peut apporter de la compagnie et un cadre à tes journées. Tu n’as pas besoin d’attendre d’aller mieux pour demander à quelqu’un de t’accompagner.",
-        "Ces gestes peuvent contribuer au bien-être, mais ils ne constituent pas un traitement et ne remplacent pas un accompagnement professionnel. Si tu n’arrives pas à faire quelque chose, cela ne signifie pas que tu as échoué : tu n’es pas responsable de ta dépression."
-      ],
-      "sources": [
-        {
-          "label": "Organisation mondiale de la Santé : dépression",
-          "url": "https://www.who.int/fr/news-room/fact-sheets/detail/depression"
-        }
-      ]
-    },
-    {
-      "category": "HABITUDES ET BIEN-ÊTRE",
-      "readTime": "4 min de lecture",
-      "title": "Des habitudes bienveillantes pour prendre soin de sa santé mentale",
-      "summary": "Le sommeil, l’activité physique, des repas réguliers et des relations de soutien peuvent contribuer au bien-être.",
-      "paragraphs": [
-        "Un rythme de sommeil raisonnable et des repas réguliers peuvent donner un peu de structure à la journée. Si tu en as envie et si tu le peux, marcher ou pratiquer une activité physique douce peut également être une façon de prendre soin de toi : il n’est pas nécessaire d’en faire beaucoup ni de tout faire parfaitement.",
-        "Parler à une personne de confiance, faire une pause et poser des limites lorsque c’est possible font également partie du bien-être. Les besoins et les situations varient d’une personne à l’autre : essaie uniquement ce qui te convient.",
-        "Les habitudes saines peuvent aider certaines personnes à se sentir mieux, mais elles ne préviennent ni ne guérissent à elles seules tous les problèmes de santé mentale. Tu mérites du soutien même si tu n’arrives pas à suivre une routine en ce moment."
-      ],
-      "sources": [
-        {
-          "label": "Organisation mondiale de la Santé : interventions d’autosoins",
-          "url": "https://www.who.int/news-room/fact-sheets/detail/self-care-health-interventions"
-        }
-      ]
-    },
-    {
-      "category": "DEMANDER DE L’AIDE",
-      "readTime": "4 min de lecture",
-      "title": "Demander du soutien peut être un premier pas",
-      "summary": "Tu n’as pas besoin de trouver les mots parfaits pour dire à quelqu’un que tu traverses une période difficile.",
-      "paragraphs": [
-        "Tu peux commencer par une phrase simple, comme : « En ce moment, je ne me sens pas bien et j’ai besoin de parler. » Si le dire à voix haute est difficile, tu peux aussi écrire un message ou demander à quelqu’un de t’accompagner.",
-        "Si ton mal-être persiste, t’empêche d’étudier, de travailler ou d’entretenir des relations, ou si ton état t’inquiète, consulte un professionnel de santé. Un médecin, un psychologue ou un autre professionnel qualifié peut t’écouter et discuter avec toi des solutions de soutien possibles.",
-        "Demander de l’aide ne signifie pas que tu as échoué. Si la première personne ne sait pas comment t’aider, essaie de te tourner vers une autre personne de confiance ou un service de santé. Ce blog informe, mais il ne peut ni évaluer ni traiter une situation personnelle."
-      ],
-      "sources": [
-        {
-          "label": "Organisation mondiale de la Santé : dépression et prise en charge",
-          "url": "https://www.who.int/fr/news-room/fact-sheets/detail/depression"
-        }
-      ]
-    },
-    {
-      "category": "CONFIANCE EN SOI",
-      "readTime": "3 min de lecture",
-      "title": "Avoir confiance en soi ne signifie pas avoir tout résolu",
-      "summary": "La confiance en soi peut aussi commencer par le fait de se parler avec un peu plus de bienveillance.",
-      "paragraphs": [
-        "Avoir confiance en soi ne signifie pas ne jamais douter. Tu peux reconnaître tes efforts, respecter tes limites et te rappeler qu’une erreur ne définit pas qui tu es.",
-        "Lorsque tu te surprends à te critiquer durement, demande-toi si tu parlerais de cette façon à quelqu’un que tu aimes. Tu n’as pas besoin de te forcer à penser positivement : essaie simplement de trouver une phrase plus juste et plus bienveillante.",
-        "Ta valeur ne dépend pas de la comparaison avec les autres ni du respect d’une liste d’attentes. Apprendre à se traiter avec respect prend du temps, et tu peux demander à quelqu’un de t’accompagner dans cette démarche."
+        "Ante un malestar, ansiedad o un periodo difícil, Ciertos hábitos pueden aparecer rápidamente y volverse incontrolables.La adicción no es ni una falta de voluntad ni una simple voluntad personal : se trata de un trastorno complejo.",
+        "Reconocer que un comportamiento o un consumo ocupa demasiado espacio en la propia vida es un paso sumamente importante. Esta toma de conciencia sola no permite siempre salir de una adicción pero permite hacerlo más fácilmente y buscar ayuda a su entorno o a profesionales.",
+        "Hablar de sus dificultades con profesionales especializados o con personas de confianza permite encontrar un apoyo para superar estas dificultades."
       ],
       "sources": []
     },
     {
-      "category": "HARCÈLEMENT ET CYBERHARCÈLEMENT",
-      "readTime": "4 min de lecture",
-      "title": "Le harcèlement n’est pas une plaisanterie lorsqu’il fait du mal",
-      "summary": "En personne ou sur Internet, personne ne devrait avoir à affronter l’humiliation ou la peur seul.",
+      "category": "LA ANSIEDAD",
+      "readTime": "~4 min de lectura",
+      "title": "Ansiedad social : un trastorno omnipresente",
+      "summary": "Superar el miedo al juicio de los demás y dominar su ansiedad.",
       "paragraphs": [
-        "Le harcèlement peut prendre la forme d’insultes, d’exclusion, de menaces, de rumeurs ou de messages blessants. Le fait qu’il se produise derrière un écran ne le rend pas moins réel, et la personne qui le subit n’en est pas responsable.",
-        "Si cela t’arrive, tu peux conserver des preuves, bloquer ou signaler les comptes concernés et en parler à un adulte ou à une personne de confiance. Choisis les démarches qui sont sûres pour toi : tu n’as pas à affronter la personne qui te harcèle sans soutien.",
-        "Si cela arrive à quelqu’un de ton entourage, l’écouter sans le juger et l’accompagner pour chercher de l’aide auprès de sa famille, de son établissement scolaire ou de la plateforme numérique peut faire une différence."
+        "Vencer la ansiedad social se basa en una mejora progresiva. En lugar de imponerse objetivos pesados, hay que ir paso a paso.",
+        "También es útil cuestionar los propios pensamientos. La ansiedad social nos hace creer que todos nos observan o nos juzgan y nos critican. Cuando la pánico sube, tomar conciencia de nuestro entorno ayuda: observa la habitación y practica una respiración tranquila.",
+        "La ansiedad es lejos de ser simple de entender y superar. Trabajar con un profesional de la salud o compartir con personas cercanas permite superar la ansiedad."
+      ],
+      "sources": [
+        {
+          "label": "Organización Mundial de la Salud: Trastornos de ansiedad",
+          "url": "https://www.who.int/fr/news-room/fact-sheets/detail/anxiety-disorders"
+        }
+      ]
+    },
+    {
+      "category": "EL ACOSO",
+      "readTime": "~4 min de lectura",
+      "title": "Acoso: cero tolerancia, cero impunidad",
+      "summary": "Frente a la violencia y la humillación, el silencio ayuda a los agresores.",
+      "paragraphs": [
+        "Ya sea al fuera o detrás de una pantalla, el acoso destruye vidas. Los insultos, el ciberacoso y la exclusión de alguien no es un juego.",
+        "Si sufres ataques, hablar con una persona de confianza, allegados e incluso profesores, y avisa de inmediato a adultos de confianza o estructuras especializadas. Esto puede parecer difícil pero es algo indispensable para protegerse y proteger a los demás.",
+        "Como testigo, debemos romper el silencio. Apoyar a una persona acosada, rechazar compartir contenidos difamatorios y denunciar estos actos permite evitar consecuencias graves."
       ],
       "sources": []
     }
   ],
   "callout": {
-    "title": "Tu n’as pas besoin de trouver les mots parfaits pour commencer à parler.",
-    "text": "Écouter sans juger, demander à quelqu’un comment il va et l’accompagner pour trouver du soutien sont des gestes importants."
+    "title": "¿Tus seres queridos están pasando por dificultades? Escúchalos.",
+    "text": "Escuchar sin juzgar, estar presente para un amigo o para su familia son los primeros pasos para ayudarlos."
   },
   "about": {
-    "title": "Pourquoi « Aide mentale » ?",
-    "text": "Ce projet scolaire de sensibilisation souhaite encourager les échanges autour de la santé mentale de manière accessible et sans préjugés. Le blog partage des informations générales pour réfléchir et trouver du soutien. Il ne pose aucun diagnostic et ne remplace pas les conseils d’un professionnel de santé."
+    "title": "¿Por qué este compromiso?",
+    "text": "Hemos elegido este tema porque demasiadas personas sufren ansiedad, depresión y otros trastornos, lo que lleva a consecuencias graves."
   },
   "footer": {
-    "projectName": "Aide mentale",
-    "projectType": "Projet scolaire",
-    "slogan": "Ce qui ne se voit pas mérite aussi d’être entendu."
+    "projectName": "Salud Mental",
+    "projectType": "Una campaña activista para la salud mental",
+    "slogan": "Cuidar la mente también cuenta."
   },
   "errors": {
-    "contentLoadFailed": "Impossible de charger les textes. Vérifie que le fichier content.json se trouve à côté de index.html et ouvre le site depuis un serveur Web local ou un site publié.",
-    "contentInvalid": "Le fichier content.json n’a pas un format valide. Vérifie sa structure et recharge la page."
+    "contentLoadFailed": "No es posible cargar los textos. Comprueba que el archivo content.json se encuentre junto al archivo index.html.",
+    "contentInvalid": "El archivo content.json contiene un error de estructura. Comprueba el formato y vuelve a cargar."
   }
 }
