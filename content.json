@@ -108,7 +108,12 @@
   },
   "about": {
     "title": "¿Por qué este compromiso?",
-    "text": "Hemos elegido este tema porque demasiadas personas sufren ansiedad, depresión y otros trastornos, lo que lleva a consecuencias graves."
+    "text": [
+      "Hace dos años, uno de nuestros amigos, Arthur, también cofundador de este proyecto, fue víctima de acoso. Fue empujado, excluido y herido moralmente por alumnos. Esta experiencia la marcó profundamente y la hirió moralmente, influyendando en su salud mental.",
+      "Sin embargo, gracias a su voluntad y a su valentía, logró hablar de ello con su entorno, lo que le permitió salir de ese encierro. Poco a poco, pudo salir de este periodo difícil.",
+      "Es en particular, este acontecimiento el que nos motivó a elegir este tema. Queremos sensibilizar a los personas sobre las consecuencias del acoso en la salud mental. También queremos mostrar que es importante no quedarse solo y como apoyo, ayudar a cualquiera que necesite ayuda.",
+      "Demasiadas personas sufren ansiedad, depresión y otros trastornos, lo que lleva a consecuencias graves."
+    ]
   },
   "footer": {
     "projectName": "Salud Mental",
