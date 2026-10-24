@@ -413,6 +413,10 @@
         margin: 0;
         color: var(--muted);
       }
+      .about-body {
+        display: grid;
+        gap: 12px;
+      }
       footer {
         padding: 22px 0;
         border-top: 1px solid var(--line);
@@ -652,6 +656,11 @@
           if (value !== undefined) node.append(text(value));
           return node;
         };
+        const paragraphs = (parent, value, className) => {
+          const items = Array.isArray(value) ? value : [value];
+          items.forEach((item) => parent.append(element("p", className, item)));
+          return parent;
+        };
         const link = (label, href, className) => {
           const node = element("a", className, label);
           node.href = href;
@@ -805,14 +814,14 @@
           });
 
           const callout = document.querySelector(".callout");
-          callout.append(
-            element("h2", "", data.callout.title),
-            element("p", "", data.callout.text),
-          );
+          callout.append(element("h2", "", data.callout.title));
+          paragraphs(callout, data.callout.text);
           const about = document.querySelector(".about");
           const aboutTitle = element("h2", "", data.about.title);
           aboutTitle.id = "about-title";
-          about.append(aboutTitle, element("p", "", data.about.text));
+          const aboutBody = element("div", "about-body");
+          paragraphs(aboutBody, data.about.text);
+          about.append(aboutTitle, aboutBody);
           const footer = document.querySelector(".footer-inner");
           footer.append(
             element("span", "footer-credit", `© ${data.footer.projectName}`),
@@ -820,19 +829,23 @@
             element("span", "school-note", data.footer.projectType),
           );
           const disclaimer = document.querySelector(".footer-disclaimer");
-          const disclaimerEs = element("p", "", data.footer.disclaimer.es);
-          disclaimerEs.lang = "es";
-          const disclaimerEn = element("p", "", data.footer.disclaimer.en);
-          disclaimerEn.lang = "en";
-          disclaimer.append(
-            element(
-              "p",
-              "disclaimer-title",
-              data.footer.disclaimer.title,
-            ),
-            disclaimerEs,
-            disclaimerEn,
-          );
+          if (data.footer.disclaimer) {
+            const disclaimerEs = element("p", "", data.footer.disclaimer.es);
+            disclaimerEs.lang = "es";
+            const disclaimerEn = element("p", "", data.footer.disclaimer.en);
+            disclaimerEn.lang = "en";
+            disclaimer.append(
+              element(
+                "p",
+                "disclaimer-title",
+                data.footer.disclaimer.title,
+              ),
+              disclaimerEs,
+              disclaimerEn,
+            );
+          } else {
+            disclaimer.hidden = true;
+          }
           site.hidden = false;
         };
         load().catch((error) => {
