@@ -2,7 +2,7 @@
   "language": "español",
   "page": {
     "title": "Salud Mental — Cuidar la mente también cuenta.",
-    "description": "Un espacio dedicado a ayudar a cualquier persona que tenga preguntas sobre su salud mental.",
+    "description": "Un sitio para ayudar a las personas que tienen preguntas sobre la salud mental.",
     "themeColor": "#f6f2eb"
   },
   "navigation": {
@@ -24,18 +24,18 @@
     ]
   },
   "hero": {
-    "eyebrow": "Un espacio seguro para comprender la salud mental",
+    "eyebrow": "Un lugar para entender la salud mental",
     "title": "Cuidar la mente también cuenta ",
     "highlight": "cuenta",
-    "intro": "La salud mentale es un elemento clave para nuestra vida y nuestro bienestar. El 15 % de los jóvenes mundial de 10 a 19 años sufre un trastorno mental como la depresión y 5,2 % para los adultos. Para luchar contra, no se debe descuidar los síntomas y dejar pasar todo. Es necesario rodearse, abordar soluciones y cuidar unos de otros.",
+    "intro": "La salud mental es un elemento clave para nuestra vida y nuestro bienestar. El 15 % de los jóvenes mundial de 10 a 19 años sufre un trastorno mental como la depresión y 5,2 % para los adultos. Para luchar contra, no se debe descuidar los síntomas y dejar pasar todo. Es necesario rodearse, abordar soluciones y cuidar unos de otros.",
     "illustrationLabel": "Ilustración de un puño en alto y un corazón solidario",
     "illustrationIcon": "♡",
-    "illustrationQuote": "No permitas que quienes te rodean se sientan solos.",
+    "illustrationQuote": "No dejes que tus amigos y tu familia se sientan solos.",
     "illustrationCaption": "Ayudemos a nuestros seres queridos frente al sufrimiento mental.",
     "spark": "✳"
   },
   "articlesSection": {
-    "eyebrow": "Informarse, deconstruir, actuar",
+    "eyebrow": "Informarse, comprender, actuar",
     "title": "Comprender las realidades de la salud mental",
     "titleSecondLine": "para afrontarlo mejor.",
     "description": "Recursos claras para comprender, apoyar a nuestros seres queridos y también prevenir el sufrimiento mental.",
@@ -46,8 +46,8 @@
     {
       "category": "LA DEPRESIÓN",
       "readTime": "~5 min de lectura",
-      "title": "La depresión no es una elección, sino algo que se padece.",
-      "summary": "Dejemos de confundir una enfermedad con la pereza o un falta de voluntad pensando que es facil salir de esta situación.",
+      "title": "La depresión no es una elección.",
+      "summary": "Dejemos de confundir una enfermedad con la pereza o una falta de voluntad pensando que es facil salir de esta situación.",
       "paragraphs": [
         "Una persona que sufre depresión no elige estarlo, y no puede salir de esa situación facilmente solo porque alguien le diga que supere este trance. No todas las personas que sufren depresión son conscientes de hacer una. Por consiguiente, debemos ayudarlos a identificar los síntomas, hacia soluciones fiables, como psicólogos o médicos.",
         "Demasiadas personas sufren de depresión ya sea para los empleados o los estudiantes. Para luchar contra ello, hay que rodearse de personas de confianza y hablar de ello.",
@@ -64,10 +64,10 @@
       "category": "LAS ADICCIONES",
       "readTime": "~4 min de lectura",
       "title": "Adicciones y salud mental",
-      "summary": "Comprender los mecanismos de la adicción para protegerse mejor y saber dónde encontrar ayuda sin ser juzgado.",
+      "summary": "Entender cómo funciona la adicción para protegerse y saber dónde pedir ayuda.",
       "paragraphs": [
         "Ante un malestar, ansiedad o un periodo difícil, Ciertos hábitos pueden aparecer rápidamente y volverse incontrolables.La adicción no es ni una falta de voluntad ni una simple voluntad personal : se trata de un trastorno complejo.",
-        "Reconocer que un comportamiento o un consumo ocupa demasiado espacio en la propia vida es un paso sumamente importante. Esta toma de conciencia sola no permite siempre salir de una adicción pero permite hacerlo más fácilmente y buscar ayuda a su entorno o a profesionales.",
+        "Reconocer que un hábito ocupa demasiado espacio en la vida es un primer paso importante. Darse cuenta del problema no siempre basta para salir de una adicción, pero ayuda a pedir ayuda a la familia, a los amigos o a profesionales.",
         "Hablar de sus dificultades con profesionales especializados o con personas de confianza permite encontrar un apoyo para superar estas dificultades."
       ],
       "sources": []
@@ -75,11 +75,11 @@
     {
       "category": "LA ANSIEDAD",
       "readTime": "~4 min de lectura",
-      "title": "Ansiedad social : un trastorno omnipresente",
-      "summary": "Superar el miedo al juicio de los demás y dominar su ansiedad.",
+      "title": "Ansiedad social: un problema muy frecuente",
+      "summary": "Perder el miedo a lo que piensan los demás y controlar la ansiedad.",
       "paragraphs": [
         "Vencer la ansiedad social se basa en una mejora progresiva. En lugar de imponerse objetivos pesados, hay que ir paso a paso.",
-        "También es util cuestionar los propios pensamientos. La ansiedad social nos hace creer que todos nos observan o nos juzgan y nos critican. Cuando la pánico sube, tomar conciencia de nuestro entorno ayuda: observa la habitación y practica una respiración tranquila.",
+        "También es util cuestionar los propios pensamientos. La ansiedad social nos hace creer que todos nos observan o nos juzgan y nos critican. Cuando el pánico sube, tomar conciencia de nuestro entorno ayuda: observa la habitación y practica una respiración tranquila.",
         "La ansiedad es lejos de ser simple de entender y superar. Trabajar con un profesional de la salud o compartir con personas cercanas permite superar la ansiedad."
       ],
       "sources": [
@@ -92,11 +92,11 @@
     {
       "category": "EL ACOSO",
       "readTime": "~4 min de lectura",
-      "title": "Acoso: cero tolerancia, cero impunidad",
-      "summary": "Frente a la violencia y la humillación, el silencio ayuda a los agresores.",
+      "title": "Acoso: no lo aceptamos",
+      "summary": "Si nos callamos ante la violencia y la humillación, ayudamos a los agresores.",
       "paragraphs": [
-        "Ya sea al fuera o detrás de una pantalla, el acoso destruye vidas. Los insultos, el ciberacoso y la exclusión de alguien no es un juego.",
-        "Si sufres de acoso, hablar con una persona de confianza, allegados e incluso profesores, y avisa de inmediato a adultos de confianza o estructuras especializada. Esto puede parecer dificil pero es algo indispensable para protegerse y proteger a los demás.",
+        "Ya sea afuera o detrás de una pantalla, el acoso destruye vidas. Los insultos, el ciberacoso y la exclusión de alguien no son un juego.",
+        "Si sufres de acoso, habla con una persona de confianza, allegados e incluso profesores, y avisa de inmediato a adultos de confianza o estructuras especializadas. Esto puede parecer dificil pero es algo indispensable para protegerse y proteger a los demás.",
         "Como testigo, debemos romper el silencio. Apoyar a una persona acosada, rechazar compartir contenidos difamatorios y denunciar estos actos permite evitar consecuencias graves."
       ],
       "sources": []
@@ -109,8 +109,8 @@
   "about": {
     "title": "¿Por qué este compromiso?",
     "text": [
-      "Hace dos años, uno de nuestros amigos, Arthur, también cofundador de este proyecto, fue víctima de acoso. Fue empujado, excluido y herido moralmente por alumnos. Esta experiencia la marcó profundamente y la hirió moralmente, influyendando en su salud mental.",
-      "Sin embargo, gracias a su voluntad y a su valentía, logró hablar de ello con su entorno, lo que le permitió salir de ese encierro. Poco a poco, pudo salir de este periodo difícil.",
+      "Hace dos años, uno de nuestros amigos, Arthur, también cofundador de este proyecto, fue víctima de acoso. Fue empujado, excluido y herido moralmente por alumnos. Esta experiencia la marcó profundamente y la hirió moralmente, influyendo en su salud mental.",
+      "Sin embargo, gracias a su voluntad y a su valentía, pudo hablar con sus amigos y su familia, y salir de esa situación. Poco a poco, pasó este periodo difícil.",
       "Es en particular, este acontecimiento el que nos motivó a elegir este tema. Queremos sensibilizar a los personas sobre las consecuencias del acoso en la salud mental. También queremos mostrar que es importante no quedarse solo y como apoyo, ayudar a cualquiera que necesite ayuda.",
       "Demasiadas personas sufren ansiedad, depresión y otros trastornos, lo que lleva a consecuencias graves."
     ]
@@ -121,8 +121,8 @@
     "slogan": "Cuidar la mente también cuenta.           Proyecto creado por Olivier, para la clase de español.",
     "disclaimer": {
       "title": "Proyecto escolar · School project",
-      "es": "Este sitio web es un proyecto escolar realizado para una clase de español. Su propósito es únicamente informativo y de sensibilización: no es un sitio médico y no sustituye el consejo de un profesional de la salud. Si tú o alguien cercano lo está pasando mal, habla con un adulto de confianza o con un profesional.",
-      "en": "This website is a school project made for a Spanish class. It is for information and awareness only: it is not a medical website and does not replace the advice of a health professional. If you or someone close to you is struggling, talk to a trusted adult or a health professional."
+      "es": "Este sitio es un proyecto escolar de la clase de español. Sirve para informar y sensibilizar: no es un sitio médico y no sustituye a un profesional de la salud. Si tú o alguien cercano está mal, habla con un adulto de confianza o con un profesional.",
+      "en": "This website is a school project for Spanish class. It is only to inform and raise awareness. It is not a medical website and it does not replace a health professional. If you or someone you know is struggling, talk to a trusted adult or a professional."
     }
   },
   "errors": {
